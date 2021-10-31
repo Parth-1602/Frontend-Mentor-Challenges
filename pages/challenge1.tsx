@@ -69,7 +69,7 @@ const Challenge1 = () => {
         <Box
           sx={{
             maxWidth: {
-              xs: "350px",
+              xs: "300px",
               sm: "400px",
             },
           }}
@@ -82,7 +82,15 @@ const Challenge1 = () => {
             height="200px"
             className={styles.heroImage}
           />
-          <Box className={styles.contentWrapper}>
+          <Box
+            sx={{
+              p: {
+                xs: "24px",
+                sm: "32px",
+              },
+            }}
+            className={styles.contentWrapper}
+          >
             <Typography
               className={styles.headingText}
               variant="h1"
