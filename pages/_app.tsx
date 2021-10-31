@@ -15,7 +15,7 @@ interface MyAppProps extends AppProps {
   emotionCache?: EmotionCache;
 }
 
-function MyApp(props: MyAppProps) {
+export default function MyApp(props: MyAppProps) {
   const { Component, emotionCache = clientSideEmotionCache, pageProps } = props;
   return (
     <StyledEngineProvider injectFirst>
@@ -37,5 +37,3 @@ function MyApp(props: MyAppProps) {
     </StyledEngineProvider>
   );
 }
-
-export default MyApp;
