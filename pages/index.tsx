@@ -43,7 +43,7 @@ const LandingPage = () => {
                       {challenge_detail.name}
                     </Typography>
                     <Typography variant="body2">
-                      {challenge_detail.description}
+                      {`${challenge_detail.description.slice(0, 80)}...`}
                     </Typography>
                   </CardContent>
                   <CardActions>
@@ -60,7 +60,13 @@ const LandingPage = () => {
                       startIcon={<GitHubIcon />}
                       size="small"
                     >
-                      Github Code
+                      <a
+                        href="https://github.com/Parth-1602/Frontend-Mentor-Challenges"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        Github Code
+                      </a>
                     </Button>
                   </CardActions>
                 </Card>

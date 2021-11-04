@@ -4,7 +4,7 @@ import Head from "next/head";
 import { Box, Typography, Button } from "@mui/material";
 import { styled } from "@mui/material/styles";
 import useClasses from "../src/useClasses";
-import useStyles from "../styles/challenge1/styles";
+import useStyles from "../styles/challenge2/styles";
 
 const ProceedButton = styled(Button)({
   boxShadow: "0px 8px 8px  hsl(225, 100%, 94%)",
@@ -46,7 +46,7 @@ const CancelButton = styled(Button)({
   },
 });
 
-const Challenge1 = () => {
+const Challenge2 = () => {
   const classes = useClasses(useStyles);
   return (
     <div>
@@ -55,73 +55,41 @@ const Challenge1 = () => {
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         {/* eslint-disable-next-line @next/next/no-page-custom-font */}
         <link
-          href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap"
           rel="stylesheet"
         />
       </Head>
       <Box className={classes.pageWrapper}>
         <Box className={classes.card}>
-          <Image
-            src="/images/1/illustration-hero.svg"
-            alt="Main Image"
-            width="400px"
-            height="200px"
-            className={classes.heroImage}
-          />
-          <Box
-            sx={{
-              p: {
-                xs: "24px",
-                sm: "32px",
-              },
-            }}
-            className={classes.contentWrapper}
-          >
+          <Box className={classes.cardContent}>
             <Typography
               className={classes.headingText}
               variant="h1"
               component="div"
               gutterBottom
             >
-              Order Summary
+              Get insights that help your business grow.
             </Typography>
             <Typography
               className={classes.subtitleText}
               variant="subtitle2"
               component="div"
             >
-              You can now listen to millions of songs, audiobooks, and podcasts
-              on any device anywhere you like!
+              Discover the benefits of data analytics and make better decisions
+              regarding revenue, customer experience and overall efficiency.
             </Typography>
-            <Box className={classes.planBox}>
-              <Image
-                src="/images/1/icon-music.svg"
-                alt="Music Icon"
-                width="40px"
-                height="40px"
-              />
-              <Box className={classes.planDetails}>
-                <Typography
-                  className={classes.planDetailHeading}
-                  variant="body1"
-                >
-                  Annual Plan
-                </Typography>
-                <Typography className={classes.planDetailInfo} variant="body1">
-                  $59.99/year
-                </Typography>
-              </Box>
-              <Typography className={classes.changeButton} variant="body1">
-                <a>Change</a>
-              </Typography>
-            </Box>
-            <ProceedButton disableRipple>Proceed to Payment</ProceedButton>
-            <CancelButton disableRipple>Cancel Order</CancelButton>
           </Box>
+          <Image
+            src="/images/2/image-header-desktop.jpg"
+            alt="Main Image"
+            width="500px"
+            height="200px"
+            className={classes.heroImage}
+          />
         </Box>
       </Box>
     </div>
   );
 };
 
-export default Challenge1;
+export default Challenge2;
