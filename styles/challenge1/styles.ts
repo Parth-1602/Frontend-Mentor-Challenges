@@ -38,6 +38,7 @@ const useStyles = (theme: any) => ({
     fontFamily: "Outfit, sans-serif",
     color: "hsl(220, 15%, 55%)",
     fontSize: "15px",
+    lineHeight: "1.4",
     fontWeight: 400,
   },
 });

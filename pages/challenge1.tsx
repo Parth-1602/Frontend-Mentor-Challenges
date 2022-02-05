@@ -1,7 +1,6 @@
 import * as React from "react";
-import Image from "next/image";
 import Head from "next/head";
-import { Box, Typography, Button } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import useClasses from "../src/useClasses";
 import useStyles from "../styles/challenge1/styles";
 
@@ -19,7 +18,7 @@ const Challenge1 = () => {
         />
       </Head>
       <Box className={classes.pageWrapper}>
-        <Box className={classes.card}>
+        <Box role="main" className={classes.card}>
           <Box
             sx={{
               p: {
@@ -29,25 +28,29 @@ const Challenge1 = () => {
             }}
             className={classes.contentWrapper}
           >
-            <Image
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              role="img"
               src="/images/1/image-qr-code.png"
               alt="Main Image"
-              width="400px"
-              height="400px"
+              width="100%"
+              height="250px"
               className={classes.qrImage}
             />
             <Typography
+              role="heading"
               className={classes.headingText}
               variant="h1"
-              component="div"
+              component="h1"
               gutterBottom
             >
               Improve your front-end skills by building projects
             </Typography>
             <Typography
+              role="description"
               className={classes.subtitleText}
               variant="subtitle2"
-              component="div"
+              component="p"
             >
               Scan the QR code to visit Frontend Mentor and take your coding
               skills to the next level
