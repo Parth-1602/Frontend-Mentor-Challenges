@@ -22,6 +22,8 @@ const useStyles = (theme: any) => ({
   },
   qrImage: {
     borderRadius: "8px",
+    width: "100%",
+    height: "250px",
   },
   contentWrapper: {
     textAlign: "center",

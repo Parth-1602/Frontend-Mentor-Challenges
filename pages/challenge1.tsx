@@ -30,15 +30,11 @@ const Challenge1 = () => {
           >
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              role="img"
               src="/images/1/image-qr-code.png"
               alt="Main Image"
-              width="100%"
-              height="250px"
               className={classes.qrImage}
             />
             <Typography
-              role="heading"
               className={classes.headingText}
               variant="h1"
               component="h1"
@@ -47,7 +43,6 @@ const Challenge1 = () => {
               Improve your front-end skills by building projects
             </Typography>
             <Typography
-              role="description"
               className={classes.subtitleText}
               variant="subtitle2"
               component="p"
