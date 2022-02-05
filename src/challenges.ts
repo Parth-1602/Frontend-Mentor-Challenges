@@ -7,6 +7,13 @@ const challenges = [
     route: "/challenge1",
   },
   {
+    name: "Challenge 2",
+    description:
+      "This HTML & CSS only challenge is perfect for anyone just starting out or anyone wanting a small project to play around with.",
+    image: "/images/2/image-equilibrium.jpg",
+    route: "/challenge2",
+  },
+  {
     name: "Challenge 3",
     description:
       "A perfect project for newbies who are starting to build confidence with layouts!",
