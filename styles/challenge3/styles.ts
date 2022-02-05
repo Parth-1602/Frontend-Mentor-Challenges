@@ -22,6 +22,8 @@ const useStyles = (theme: any) => ({
   },
   heroImage: {
     borderRadius: "16px 16px 0 0",
+    width: "400px",
+    height: "200px",
   },
   contentWrapper: {
     textAlign: "center",
@@ -45,6 +47,10 @@ const useStyles = (theme: any) => ({
     display: "flex",
     alignItems: "center",
     borderRadius: theme.spacing(1),
+  },
+  musicIcon: {
+    width: "40px",
+    height: "40px",
   },
   planDetails: {
     marginLeft: theme.spacing(2),

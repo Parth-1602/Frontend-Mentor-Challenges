@@ -60,12 +60,11 @@ const Challenge3 = () => {
         />
       </Head>
       <Box className={classes.pageWrapper}>
-        <Box className={classes.card}>
-          <Image
+        <Box role="main" className={classes.card}>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
             src="/images/3/illustration-hero.svg"
             alt="Main Image"
-            width="400px"
-            height="200px"
             className={classes.heroImage}
           />
           <Box
@@ -80,7 +79,7 @@ const Challenge3 = () => {
             <Typography
               className={classes.headingText}
               variant="h1"
-              component="div"
+              component="h1"
               gutterBottom
             >
               Order Summary
@@ -88,30 +87,39 @@ const Challenge3 = () => {
             <Typography
               className={classes.subtitleText}
               variant="subtitle2"
-              component="div"
+              component="p"
             >
               You can now listen to millions of songs, audiobooks, and podcasts
               on any device anywhere you like!
             </Typography>
             <Box className={classes.planBox}>
-              <Image
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
                 src="/images/3/icon-music.svg"
                 alt="Music Icon"
-                width="40px"
-                height="40px"
+                className={classes.musicIcon}
               />
               <Box className={classes.planDetails}>
                 <Typography
                   className={classes.planDetailHeading}
                   variant="body1"
+                  component="p"
                 >
                   Annual Plan
                 </Typography>
-                <Typography className={classes.planDetailInfo} variant="body1">
+                <Typography
+                  component="p"
+                  className={classes.planDetailInfo}
+                  variant="body1"
+                >
                   $59.99/year
                 </Typography>
               </Box>
-              <Typography className={classes.changeButton} variant="body1">
+              <Typography
+                component="p"
+                className={classes.changeButton}
+                variant="body1"
+              >
                 <a>Change</a>
               </Typography>
             </Box>
