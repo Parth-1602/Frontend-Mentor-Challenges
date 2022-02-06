@@ -94,7 +94,7 @@ const LandingPage = () => {
                         size="small"
                       >
                         <a
-                          href="https://github.com/Parth-1602/Frontend-Mentor-Challenges"
+                          href={challenge_detail.github}
                           target="_blank"
                           rel="noreferrer"
                         >
