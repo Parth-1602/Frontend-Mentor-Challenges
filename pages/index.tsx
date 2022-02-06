@@ -27,7 +27,7 @@ const LandingPage = () => {
   return (
     <div>
       <Layout>
-        <Grid container>
+        <Grid container spacing={4}>
           {challenges.map((challenge_detail) => {
             return (
               <Grid item xs={12} sm={4} key={challenge_detail.name}>

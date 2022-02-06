@@ -20,6 +20,13 @@ const challenges = [
     image: "/images/3/illustration-hero.svg",
     route: "/challenge3",
   },
+  {
+    name: "Challenge 4",
+    description:
+      "This is a great small challenge to help get you used to building to a design. There's no JS in this project, so you'll be able to focus on your HTML & CSS skills.",
+    image: "/images/4/image-header-desktop.jpg",
+    route: "/challenge4",
+  },
 ];
 
 export { challenges };
