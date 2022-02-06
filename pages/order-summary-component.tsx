@@ -46,7 +46,7 @@ const CancelButton = styled(Button)({
   },
 });
 
-const Challenge3 = () => {
+const OrderSummary = () => {
   const classes = useClasses(useStyles);
   return (
     <div>
@@ -132,4 +132,4 @@ const Challenge3 = () => {
   );
 };
 
-export default Challenge3;
+export default OrderSummary;

@@ -4,7 +4,7 @@ import { Box, Typography } from "@mui/material";
 import useClasses from "../src/useClasses";
 import useStyles from "../styles/qr-code-component/styles";
 
-const Challenge1 = () => {
+const QRCode = () => {
   const classes = useClasses(useStyles);
   return (
     <div>
@@ -57,4 +57,4 @@ const Challenge1 = () => {
   );
 };
 
-export default Challenge1;
+export default QRCode;

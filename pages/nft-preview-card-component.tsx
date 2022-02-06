@@ -4,7 +4,7 @@ import { Box, Typography, Avatar } from "@mui/material";
 import useClasses from "../src/useClasses";
 import useStyles from "../styles/nft-preview-card-component/styles";
 
-const Challenge2 = () => {
+const NFTPreviewCard = () => {
   const classes = useClasses(useStyles);
   const [overlay, setOverlay] = React.useState(false);
 
@@ -124,4 +124,4 @@ const Challenge2 = () => {
   );
 };
 
-export default Challenge2;
+export default NFTPreviewCard;

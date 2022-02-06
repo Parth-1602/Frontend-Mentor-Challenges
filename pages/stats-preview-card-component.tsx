@@ -4,7 +4,7 @@ import { Box, Typography } from "@mui/material";
 import useClasses from "../src/useClasses";
 import useStyles from "../styles/stats-preview-card-component/styles";
 
-const Challenge4 = () => {
+const StatsPreviewCard = () => {
   const classes = useClasses(useStyles);
   return (
     <div>
@@ -122,4 +122,4 @@ const Challenge4 = () => {
   );
 };
 
-export default Challenge4;
+export default StatsPreviewCard;
