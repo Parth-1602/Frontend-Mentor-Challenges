@@ -99,7 +99,7 @@ const NFTPreviewCard = () => {
             <Box className={classes.authorBox}>
               <Avatar
                 alt="Author Image"
-                src="/images/2/image-avatar.png"
+                src="/images/nft-preview-card-component/image-avatar.png"
                 sx={{ width: 30, height: 30, border: "1px solid #FFFFFF" }}
               />
               <Typography
