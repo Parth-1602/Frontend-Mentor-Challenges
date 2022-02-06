@@ -2,7 +2,7 @@ import * as React from "react";
 import Head from "next/head";
 import { Box, Typography, Avatar } from "@mui/material";
 import useClasses from "../src/useClasses";
-import useStyles from "../styles/challenge2/styles";
+import useStyles from "../styles/nft-preview-card-component/styles";
 
 const Challenge2 = () => {
   const classes = useClasses(useStyles);
@@ -36,14 +36,17 @@ const Challenge2 = () => {
             >
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                src="/images/2/image-equilibrium.jpg"
+                src="/images/nft-preview-card-component/image-equilibrium.jpg"
                 alt="Main Image"
                 className={classes.ethImage}
               />
               {overlay ? (
                 <Box className={classes.overlay}>
                   {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src="/images/2/icon-view.svg" alt="view icon" />
+                  <img
+                    src="/images/nft-preview-card-component/icon-view.svg"
+                    alt="view icon"
+                  />
                 </Box>
               ) : null}
             </Box>
@@ -65,7 +68,10 @@ const Challenge2 = () => {
             <Box className={classes.infoBox}>
               <Box className={classes.iconText}>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src="/images/2/icon-ethereum.svg" alt="currencyIcon" />
+                <img
+                  src="/images/nft-preview-card-component/icon-ethereum.svg"
+                  alt="currencyIcon"
+                />
                 <Typography
                   className={classes.currencyValue}
                   variant="subtitle2"
@@ -76,7 +82,10 @@ const Challenge2 = () => {
               </Box>
               <Box className={classes.iconText}>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src="/images/2/icon-clock.svg" alt="currencyIcon" />
+                <img
+                  src="/images/nft-preview-card-component/icon-clock.svg"
+                  alt="currencyIcon"
+                />
                 <Typography
                   className={classes.daysText}
                   variant="subtitle2"

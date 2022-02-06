@@ -9,9 +9,6 @@ const commonStyles = (theme: any) => ({
     maxHeight: "50px",
     zIndex: 999,
   },
-  toolBar: {
-    minHeight: "50px",
-  },
 });
 
 export default commonStyles;

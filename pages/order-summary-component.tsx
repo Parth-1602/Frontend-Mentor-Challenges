@@ -4,7 +4,7 @@ import Head from "next/head";
 import { Box, Typography, Button } from "@mui/material";
 import { styled } from "@mui/material/styles";
 import useClasses from "../src/useClasses";
-import useStyles from "../styles/challenge3/styles";
+import useStyles from "../styles/order-summary-component/styles";
 
 const ProceedButton = styled(Button)({
   boxShadow: "0px 8px 8px  hsl(225, 100%, 94%)",
@@ -63,7 +63,7 @@ const Challenge3 = () => {
         <Box role="main" className={classes.card}>
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="/images/3/illustration-hero.svg"
+            src="/images/order-summary-component/illustration-hero.svg"
             alt="Main Image"
             className={classes.heroImage}
           />
@@ -95,7 +95,7 @@ const Challenge3 = () => {
             <Box className={classes.planBox}>
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                src="/images/3/icon-music.svg"
+                src="/images/order-summary-component/icon-music.svg"
                 alt="Music Icon"
                 className={classes.musicIcon}
               />

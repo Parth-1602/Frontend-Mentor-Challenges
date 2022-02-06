@@ -2,7 +2,7 @@ import * as React from "react";
 import Head from "next/head";
 import { Box, Typography } from "@mui/material";
 import useClasses from "../src/useClasses";
-import useStyles from "../styles/challenge4/styles";
+import useStyles from "../styles/stats-preview-card-component/styles";
 
 const Challenge4 = () => {
   const classes = useClasses(useStyles);
@@ -22,7 +22,7 @@ const Challenge4 = () => {
           <Box className={classes.mobileImageCard}>
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src="/images/4/image-header-mobile.jpg"
+              src="/images/stats-preview-card-component/image-header-mobile.jpg"
               alt="Main Image"
               className={classes.mobileImage}
             />
@@ -110,7 +110,7 @@ const Challenge4 = () => {
           <Box className={classes.cardRight}>
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src="/images/4/image-header-desktop.jpg"
+              src="/images/stats-preview-card-component/image-header-desktop.jpg"
               alt="Main Image"
               className={classes.desktopImage}
             />

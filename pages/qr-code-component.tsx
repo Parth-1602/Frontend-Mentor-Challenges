@@ -2,7 +2,7 @@ import * as React from "react";
 import Head from "next/head";
 import { Box, Typography } from "@mui/material";
 import useClasses from "../src/useClasses";
-import useStyles from "../styles/challenge1/styles";
+import useStyles from "../styles/qr-code-component/styles";
 
 const Challenge1 = () => {
   const classes = useClasses(useStyles);
@@ -30,7 +30,7 @@ const Challenge1 = () => {
           >
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src="/images/1/image-qr-code.png"
+              src="/images/qr-code-component/image-qr-code.png"
               alt="Main Image"
               className={classes.qrImage}
             />
