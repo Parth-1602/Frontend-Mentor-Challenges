@@ -3,13 +3,10 @@ const useStyles = (theme: any) => ({
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
-    backgroundImage: "url(/images/1/pattern-background-desktop.svg)",
     backgroundColor: "hsl(233, 47%, 7%)",
     height: "100vh",
-    backgroundSize: "100%",
-    backgroundRepeat: "no-repeat",
-    [theme.breakpoints.down("sm")]: {
-      backgroundImage: "url(/images/1/pattern-background-mobile.svg)",
+    [theme.breakpoints.down("md")]: {
+      height: "auto",
     },
   },
   card: {
@@ -17,26 +14,66 @@ const useStyles = (theme: any) => ({
     maxWidth: "60%",
     display: "flex",
     borderRadius: theme.spacing(1.5),
+    [theme.breakpoints.down("lg")]: {
+      maxWidth: "80%",
+    },
+    [theme.breakpoints.down("md")]: {
+      flexDirection: "column",
+      margin: theme.spacing(8, 0),
+    },
+  },
+  mobileImageCard: {
+    display: "none",
+    position: "relative",
+    borderRadius: theme.spacing(1.5, 1.5, 0, 0),
+    [theme.breakpoints.down("md")]: {
+      display: "flex",
+    },
+  },
+  mobileImage: {
+    width: "100%",
+    height: "100%",
+    borderRadius: theme.spacing(1.5, 1.5, 0, 0),
+  },
+  mobileOverlay: {
+    width: "100%",
+    height: "100%",
+    backgroundColor: "hsla(277, 64%, 40%, 0.5)",
+    position: "absolute",
+    top: 0,
+    alignItems: "center",
+    justifyContent: "center",
+    display: "flex",
+    borderRadius: theme.spacing(1.5, 1.5, 0, 0),
   },
   cardLeft: {
     width: "50%",
     padding: theme.spacing(6),
-    borderRadius: theme.spacing(1.5),
+    borderRadius: theme.spacing(1.5, 0, 0, 1.5),
+    [theme.breakpoints.down("md")]: {
+      width: "100%",
+      textAlign: "center",
+      padding: theme.spacing(4),
+    },
   },
   cardRight: {
     width: "50%",
     position: "relative",
-    borderRadius: theme.spacing(1.5),
+    borderRadius: theme.spacing(0, 1.5, 1.5, 0),
+    [theme.breakpoints.down("md")]: {
+      display: "none",
+    },
   },
   desktopImage: {
     width: "100%",
     height: "100%",
-    borderRadius: theme.spacing(1.5),
+    borderRadius: theme.spacing(0, 1.5, 1.5, 0),
   },
   overlay: {
     width: "100%",
     height: "100%",
     backgroundColor: "hsla(277, 64%, 40%, 0.5)",
+    borderRadius: theme.spacing(0, 1.5, 1.5, 0),
     position: "absolute",
     top: 0,
     alignItems: "center",
@@ -49,12 +86,18 @@ const useStyles = (theme: any) => ({
     marginBottom: theme.spacing(3),
     fontSize: "30px",
     fontWeight: 700,
+    [theme.breakpoints.down("md")]: {
+      fontSize: "27px",
+    },
   },
   spanText: {
     fontFamily: "Inter, sans-serif",
     color: "hsl(277, 64%, 61%)",
     fontSize: "30px",
     fontWeight: 700,
+    [theme.breakpoints.down("md")]: {
+      fontSize: "27px",
+    },
   },
   subtitleText: {
     fontFamily: "Outfit, sans-serif",
@@ -63,12 +106,23 @@ const useStyles = (theme: any) => ({
     fontSize: "14px",
     lineHeight: "1.4",
     fontWeight: 400,
+    [theme.breakpoints.down("md")]: {
+      marginBottom: theme.spacing(4),
+      fontSize: "12px",
+    },
   },
   statsBox: {
     display: "flex",
+    [theme.breakpoints.down("md")]: {
+      flexDirection: "column",
+    },
   },
   statGroup: {
     marginRight: theme.spacing(8),
+    [theme.breakpoints.down("md")]: {
+      marginRight: 0,
+      marginBottom: theme.spacing(4),
+    },
   },
   statValue: {
     fontFamily: "Inter, sans-serif",

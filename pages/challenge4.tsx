@@ -19,6 +19,16 @@ const Challenge4 = () => {
       </Head>
       <Box className={classes.pageWrapper}>
         <Box role="main" className={classes.card}>
+          <Box className={classes.mobileImageCard}>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/images/4/image-header-mobile.jpg"
+              alt="Main Image"
+              className={classes.mobileImage}
+            />
+            <Box className={classes.mobileOverlay}></Box>
+          </Box>
+
           <Box className={classes.cardLeft}>
             <Typography
               className={classes.headingText}
