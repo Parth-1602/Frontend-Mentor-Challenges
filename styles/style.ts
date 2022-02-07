@@ -4,6 +4,7 @@ const useStyles = (theme: any) => ({
     color: theme.palette.primary.contrastText,
   },
   thumbnail: {
+    cursor: "pointer",
     width: "60px",
     height: "60px",
   },

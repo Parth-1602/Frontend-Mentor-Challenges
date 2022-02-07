@@ -6,6 +6,7 @@ const challenges = [
     github:
       "https://github.com/Parth-1602/Frontend-Mentor-Challenges/blob/main/pages/qr-code-component.tsx",
     category: "NEWBIE",
+    preview: "/images/qr-code-component/desktop-preview.jpg",
   },
   {
     name: "NFT Preview Card Component",
@@ -14,6 +15,7 @@ const challenges = [
     github:
       "https://github.com/Parth-1602/Frontend-Mentor-Challenges/blob/main/pages/nft-preview-card-component.tsx",
     category: "NEWBIE",
+    preview: "/images/nft-preview-card-component/desktop-preview.jpg",
   },
   {
     name: "Order Summary Component",
@@ -22,6 +24,7 @@ const challenges = [
     github:
       "https://github.com/Parth-1602/Frontend-Mentor-Challenges/blob/main/pages/order-summary-component.tsx",
     category: "NEWBIE",
+    preview: "/images/order-summary-component/desktop-preview.jpg",
   },
   {
     name: "Stats Preview Card Component",
@@ -30,6 +33,7 @@ const challenges = [
     github:
       "https://github.com/Parth-1602/Frontend-Mentor-Challenges/blob/main/pages/stats-preview-card-component.tsx",
     category: "NEWBIE",
+    preview: "/images/stats-preview-card-component/desktop-preview.jpg",
   },
 ];
 

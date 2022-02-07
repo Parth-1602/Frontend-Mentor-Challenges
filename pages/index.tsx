@@ -9,6 +9,8 @@ import {
   TableCell,
   TableBody,
   Typography,
+  Tooltip,
+  Modal,
   Paper,
 } from "@mui/material";
 import { styled } from "@mui/material/styles";
@@ -28,11 +30,41 @@ const DemoButton = styled(Button)(({ theme }) => ({
   },
 }));
 
+const modalStyle = {
+  position: "absolute",
+  top: "50%",
+  left: "50%",
+  transform: "translate(-50%, -50%)",
+};
+
 const LandingPage = () => {
   const classes = useClasses(useStyles);
+  const [openModal, setOpenModal] = React.useState(false);
+  const [previewImage, setPreviewImage] = React.useState(null);
+
+  const handleClose = () => {
+    setOpenModal(false);
+  };
+
   return (
     <div>
       <Layout>
+        <Modal
+          open={openModal}
+          onClose={handleClose}
+          aria-labelledby="modal-modal-title"
+          aria-describedby="modal-modal-description"
+        >
+          <Box sx={modalStyle}>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={previewImage}
+              alt="Main Image"
+              width="100%"
+              height="100%"
+            />
+          </Box>
+        </Modal>
         <TableContainer component={Paper}>
           <Table sx={{ minWidth: 650 }} aria-label="simple table">
             <TableHead className={classes.tableHeader}>
@@ -58,6 +90,10 @@ const LandingPage = () => {
                       <img
                         src={challenge_detail.image}
                         alt="Main Image"
+                        onClick={() => {
+                          setPreviewImage(challenge_detail.preview);
+                          setOpenModal(true);
+                        }}
                         className={classes.thumbnail}
                       />
                     </TableCell>

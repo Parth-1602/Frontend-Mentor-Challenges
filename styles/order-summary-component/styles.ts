@@ -3,13 +3,15 @@ const useStyles = (theme: any) => ({
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
-    backgroundImage: "url(/images/1/pattern-background-desktop.svg)",
+    backgroundImage:
+      "url(/images/order-summary-component/pattern-background-desktop.svg)",
     backgroundColor: "hsl(225, 100%, 94%)",
     height: "100vh",
     backgroundSize: "100%",
     backgroundRepeat: "no-repeat",
     [theme.breakpoints.down("sm")]: {
-      backgroundImage: "url(/images/1/pattern-background-mobile.svg)",
+      backgroundImage:
+        "url(/images/order-summary-component/pattern-background-mobile.svg)",
     },
   },
   card: {
@@ -24,6 +26,9 @@ const useStyles = (theme: any) => ({
     borderRadius: "16px 16px 0 0",
     width: "400px",
     height: "200px",
+    [theme.breakpoints.down("sm")]: {
+      width: "300px",
+    },
   },
   contentWrapper: {
     textAlign: "center",
