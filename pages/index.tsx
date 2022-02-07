@@ -9,7 +9,6 @@ import {
   TableCell,
   TableBody,
   Typography,
-  Tooltip,
   Modal,
   Paper,
 } from "@mui/material";
@@ -30,13 +29,6 @@ const DemoButton = styled(Button)(({ theme }) => ({
   },
 }));
 
-const modalStyle = {
-  position: "absolute",
-  top: "50%",
-  left: "50%",
-  transform: "translate(-50%, -50%)",
-};
-
 const LandingPage = () => {
   const classes = useClasses(useStyles);
   const [openModal, setOpenModal] = React.useState(false);
@@ -49,13 +41,15 @@ const LandingPage = () => {
   return (
     <div>
       <Layout>
-        <Modal
-          open={openModal}
-          onClose={handleClose}
-          aria-labelledby="modal-modal-title"
-          aria-describedby="modal-modal-description"
-        >
-          <Box sx={modalStyle}>
+        <Modal open={openModal} onClose={handleClose}>
+          <Box
+            sx={{
+              position: "absolute",
+              top: "50%",
+              left: "50%",
+              transform: "translate(-50%, -50%)",
+            }}
+          >
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src={previewImage}
