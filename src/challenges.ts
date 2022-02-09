@@ -35,6 +35,15 @@ const challenges = [
     category: "NEWBIE",
     preview: "/images/stats-preview-card-component/desktop-preview.jpg",
   },
+  {
+    name: "3-Column Preview Card Component",
+    image: "/images/3-column-preview-card-component/desktop-preview.jpg",
+    route: "/3-column-preview-card-component",
+    github:
+      "https://github.com/Parth-1602/Frontend-Mentor-Challenges/blob/main/pages/3-column-preview-card-component.tsx",
+    category: "NEWBIE",
+    preview: "/images/3-column-preview-card-component/desktop-preview.jpg",
+  },
 ];
 
 export { challenges };
