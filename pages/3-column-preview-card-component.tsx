@@ -2,7 +2,7 @@ import * as React from "react";
 import Head from "next/head";
 import { Box, Typography, Button } from "@mui/material";
 import useClasses from "../src/useClasses";
-import useStyles from "../styles/3-column-preview-card-component/styles";
+import useStyles from "../styles/3-column-preview-card-component";
 
 const ThreeColumnPreviewCard = () => {
   const classes = useClasses(useStyles);

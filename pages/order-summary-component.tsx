@@ -4,7 +4,7 @@ import Head from "next/head";
 import { Box, Typography, Button } from "@mui/material";
 import { styled } from "@mui/material/styles";
 import useClasses from "../src/useClasses";
-import useStyles from "../styles/order-summary-component/styles";
+import useStyles from "../styles/order-summary-component";
 
 const ProceedButton = styled(Button)({
   boxShadow: "0px 8px 8px  hsl(225, 100%, 94%)",

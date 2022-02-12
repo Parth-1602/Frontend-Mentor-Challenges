@@ -2,7 +2,7 @@ import * as React from "react";
 import Head from "next/head";
 import { Box, Typography, Avatar } from "@mui/material";
 import useClasses from "../src/useClasses";
-import useStyles from "../styles/nft-preview-card-component/styles";
+import useStyles from "../styles/nft-preview-card-component";
 
 const NFTPreviewCard = () => {
   const classes = useClasses(useStyles);

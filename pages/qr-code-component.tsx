@@ -2,7 +2,7 @@ import * as React from "react";
 import Head from "next/head";
 import { Box, Typography } from "@mui/material";
 import useClasses from "../src/useClasses";
-import useStyles from "../styles/qr-code-component/styles";
+import useStyles from "../styles/qr-code-component";
 
 const QRCode = () => {
   const classes = useClasses(useStyles);
