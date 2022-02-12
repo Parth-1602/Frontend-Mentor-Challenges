@@ -53,6 +53,15 @@ const challenges = [
     category: "NEWBIE",
     preview: "/images/profile-card-component/desktop-preview.jpg",
   },
+  {
+    name: "FAQ Accordion Card",
+    image: "/images/faq-accordion-card/illustration-woman-online-desktop.svg",
+    route: "/faq-accordion-card",
+    github:
+      "https://github.com/Parth-1602/Frontend-Mentor-Challenges/blob/main/pages/faq-accordion-card.tsx",
+    category: "NEWBIE",
+    preview: "/images/faq-accordion-card/desktop-preview.jpg",
+  },
 ];
 
 export { challenges };
