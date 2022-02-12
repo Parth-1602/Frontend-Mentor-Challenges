@@ -1,5 +1,4 @@
 import * as React from "react";
-import Image from "next/image";
 import Head from "next/head";
 import { Box, Typography, Button } from "@mui/material";
 import { styled } from "@mui/material/styles";

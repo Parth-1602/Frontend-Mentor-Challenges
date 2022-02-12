@@ -1,50 +1,8 @@
 import * as React from "react";
-import Image from "next/image";
 import Head from "next/head";
-import { Box, Typography, Button } from "@mui/material";
-import { styled } from "@mui/material/styles";
+import { Box, Typography } from "@mui/material";
 import useClasses from "../src/useClasses";
 import useStyles from "../styles/profile-card-component";
-
-const ProceedButton = styled(Button)({
-  boxShadow: "0px 8px 8px  hsl(225, 100%, 94%)",
-  textTransform: "none",
-  fontSize: 13,
-  borderRadius: "8px",
-  marginTop: "16px",
-  width: "100%",
-  height: 40,
-  fontWeight: 700,
-  backgroundColor: "hsl(245, 75%, 52%)",
-  fontFamily: "Red Hat Display, sans-serif",
-  color: "#FFFFFF",
-  "&:hover": {
-    backgroundColor: "hsl(245, 75%, 52%)",
-    boxShadow: "0px 8px 8px  hsl(225, 100%, 94%)",
-  },
-  "&:active": {
-    boxShadow: "0px 8px 8px  hsl(225, 100%, 94%)",
-    backgroundColor: "hsl(245, 50%, 60%)",
-  },
-});
-
-const CancelButton = styled(Button)({
-  textTransform: "none",
-  fontSize: 13,
-  marginTop: "16px",
-  width: "100%",
-  height: 40,
-  fontWeight: 700,
-  backgroundColor: "transparent",
-  fontFamily: "Red Hat Display, sans-serif",
-  color: "hsl(224, 23%, 55%)",
-  "&:hover": {
-    backgroundColor: "transparent",
-  },
-  "&:active": {
-    color: "hsl(223, 47%, 23%)",
-  },
-});
 
 const ProfileCard = () => {
   const classes = useClasses(useStyles);
