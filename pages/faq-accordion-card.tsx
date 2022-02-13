@@ -48,7 +48,26 @@ const FAQAccordion = () => {
       </Head>
       <Box className={classes.pageWrapper}>
         <Box role="main" className={classes.card}>
-          <Box className={classes.leftCard}></Box>
+          <Box className={classes.leftCard}>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/images/faq-accordion-card/illustration-box-desktop.svg"
+              alt="box image"
+              className={classes.boxImage}
+            />
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/images/faq-accordion-card/illustration-woman-online-mobile.svg"
+              alt="Mobile main image"
+              className={classes.mobileImage}
+            />
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/images/faq-accordion-card/bg-pattern-mobile.svg"
+              alt="Mobile shadow"
+              className={classes.mobileShadow}
+            />
+          </Box>
           <Box className={classes.rightCard}>
             <Typography
               className={classes.mainHeading}

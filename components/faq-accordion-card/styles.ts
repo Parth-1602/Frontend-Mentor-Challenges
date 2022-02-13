@@ -17,7 +17,7 @@ const useStyles = (theme: any) => ({
     fontWeight: 400,
     fontSize: "16px",
     color: "hsl(237, 12%, 33%)",
-    transition: "all 0.5s smooth",
+    transition: "all .3s ease-out",
     "&:hover": {
       color: "hsl(14, 88%, 65%)",
       fontWeight: 700,
@@ -34,7 +34,6 @@ const useStyles = (theme: any) => ({
     fontWeight: 400,
     fontSize: "14px",
     color: "hsl(240, 6%, 50%)",
-    lineHeight: "20px",
   },
   invertArrow: {
     transform: "rotate(180deg)",
