@@ -128,7 +128,7 @@ const LandingPage = () => {
                           target="_blank"
                           rel="noreferrer"
                         >
-                          VISIT
+                          VISIT GITHUB
                         </a>
                       </Button>
                     </TableCell>
@@ -139,7 +139,7 @@ const LandingPage = () => {
                         size="small"
                         onClick={() => Router.push(challenge_detail.route)}
                       >
-                        VISIT
+                        LIVE SITE
                       </DemoButton>
                     </TableCell>
                   </TableRow>
