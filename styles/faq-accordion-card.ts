@@ -54,6 +54,9 @@ const useStyles = (theme: any) => ({
       cursor: "pointer",
       transform: "scale(1.2)",
     },
+    [theme.breakpoints.down("md")]: {
+      display: "none",
+    },
   },
   mobileImage: {
     display: "none",
