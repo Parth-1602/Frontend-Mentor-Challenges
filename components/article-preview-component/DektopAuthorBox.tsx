@@ -11,7 +11,7 @@ const DesktopAuthorBox = (props) => {
   return (
     <Box className={classes.authorBox}>
       <Box className={classes.authorDetailsWrapper}>
-        <Avatar src={avatarSrc} />
+        <Avatar src={avatarSrc} alt="author image" />
         <Box className={classes.authorDetails}>
           <Typography
             className={classes.authorName}
