@@ -11,32 +11,39 @@ const useStyles = (theme: any) => ({
   },
   card: {
     backgroundColor: "#FFFFFF",
-    maxWidth: "60%",
+    maxWidth: "65%",
     display: "flex",
     borderRadius: theme.spacing(1),
-  },
-  mobileImageCard: {
-    display: "none",
-    position: "relative",
-    borderRadius: theme.spacing(1.5, 1.5, 0, 0),
-  },
-  mobileImage: {
-    width: "100%",
-    height: "100%",
-    borderRadius: theme.spacing(1.5, 1.5, 0, 0),
+    [theme.breakpoints.down("md")]: {
+      maxWidth: "90%",
+      flexDirection: "column",
+      margin: theme.spacing(8, 0),
+    },
   },
   cardLeft: {
     width: "50%",
     borderRadius: theme.spacing(1, 0, 0, 1),
+    [theme.breakpoints.down("md")]: {
+      width: "100%",
+      borderRadius: theme.spacing(1, 1, 0, 0),
+    },
   },
   cardRight: {
     width: "50%",
     padding: theme.spacing(6),
     borderRadius: theme.spacing(1.5, 0, 0, 1.5),
+    [theme.breakpoints.down("md")]: {
+      width: "100%",
+      padding: theme.spacing(2),
+    },
   },
   desktopImage: {
     width: "100%",
+    height: "100%",
     borderRadius: theme.spacing(1, 0, 0, 1),
+    [theme.breakpoints.down("md")]: {
+      borderRadius: theme.spacing(1, 1, 0, 0),
+    },
   },
   articleName: {
     fontFamily: "Manrope, sans-serif",
@@ -51,6 +58,9 @@ const useStyles = (theme: any) => ({
     color: "hsl(214, 17%, 51%)",
     fontSize: "13px",
     fontWeight: 500,
+    [theme.breakpoints.down("md")]: {
+      marginBottom: 0,
+    },
   },
 });
 

@@ -9,7 +9,6 @@ const useStyles = (theme: any) => ({
     display: "flex",
     alignItems: "center",
   },
-
   authorDetails: {
     marginLeft: theme.spacing(1.5),
   },
@@ -29,6 +28,9 @@ const useStyles = (theme: any) => ({
     backgroundColor: "hsl(210, 46%, 95%)",
     width: "30px",
     height: "30px",
+    "&:hover": {
+      cursor: "pointer",
+    },
   },
   shareIconButtonDark: {
     backgroundColor: "hsl(217, 19%, 35%)",
@@ -72,6 +74,48 @@ const useStyles = (theme: any) => ({
   socialIcon: {
     width: "14px",
     height: "14px",
+    margin: theme.spacing(0, 1),
+    "&:hover": {
+      cursor: "pointer",
+    },
+  },
+  authorMobileBox: {
+    width: "100%",
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "space-between",
+    padding: theme.spacing(2),
+  },
+  authorDarkMobileBox: {
+    width: "100%",
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "space-between",
+    padding: theme.spacing(2),
+    backgroundColor: " hsl(217, 19%, 35%)",
+    borderRadius: theme.spacing(0, 0, 1, 1),
+  },
+  shareIconsMobileWrapper: {
+    width: "100%",
+    display: "flex",
+    alignItems: "center",
+  },
+  shareIconMobileButtonDark: {
+    backgroundColor: "hsl(214, 17%, 51%)",
+    width: "30px",
+    height: "30px",
+  },
+  shareMobileText: {
+    fontFamily: "Manrope, sans-serif",
+    color: "hsl(212, 23%, 69%)",
+    fontSize: "13px",
+    fontWeight: 500,
+    letterSpacing: "4px",
+    marginRight: theme.spacing(2),
+  },
+  socialMobileIcon: {
+    width: "18px",
+    height: "18px",
     margin: theme.spacing(0, 1),
     "&:hover": {
       cursor: "pointer",
