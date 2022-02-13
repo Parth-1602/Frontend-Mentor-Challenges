@@ -3,14 +3,8 @@ const useStyles = (theme: any) => ({
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
-    backgroundImage: "url(/images/1/pattern-background-desktop.svg)",
     backgroundColor: "hsl(212, 45%, 89%)",
     height: "100vh",
-    backgroundSize: "100%",
-    backgroundRepeat: "no-repeat",
-    [theme.breakpoints.down("sm")]: {
-      backgroundImage: "url(/images/1/pattern-background-mobile.svg)",
-    },
   },
   card: {
     backgroundColor: "#ffffff",

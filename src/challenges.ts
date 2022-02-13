@@ -62,6 +62,15 @@ const challenges = [
     category: "NEWBIE",
     preview: "/images/faq-accordion-card/desktop-preview.jpg",
   },
+  {
+    name: "Social Proof Section",
+    image: "/images/social-proof-section/desktop-preview.jpg",
+    route: "/social-proof-section",
+    github:
+      "https://github.com/Parth-1602/Frontend-Mentor-Challenges/blob/main/pages/social-proof-section.tsx",
+    category: "NEWBIE",
+    preview: "/images/social-proof-section/desktop-preview.jpg",
+  },
 ];
 
 export { challenges };
