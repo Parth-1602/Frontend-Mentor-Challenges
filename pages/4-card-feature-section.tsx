@@ -4,9 +4,14 @@ import { Box, Typography } from "@mui/material";
 import useClasses from "../src/useClasses";
 import useStyles from "../styles/4-card-feature-section";
 import FeatureCard from "../components/4-card-feature-section/FeatureCard";
+import { useMediaQuery } from "@mui/material";
+import { useTheme } from "@mui/material/styles";
 
 const FourCardFeature = () => {
   const classes = useClasses(useStyles);
+  const theme = useTheme();
+  const smallDevice = useMediaQuery(theme.breakpoints.down("md"));
+
   return (
     <div className={classes.main}>
       <Head>
@@ -49,19 +54,19 @@ const FourCardFeature = () => {
             title="Supervisor"
             description="Monitors activity to identify project roadblocks"
             icon="/images/4-card-feature-section/icon-supervisor.svg"
-            marginBottom={0}
+            marginBottom={smallDevice ? 24 : 0}
           />
           <Box className={classes.middleCards}>
             <FeatureCard
               borderColor="hsl(0, 78%, 62%)"
-              marginBottom={24}
+              marginBottom={smallDevice ? 24 : 24}
               title="Team Builder"
               description="Scans our talent network to create the optimal team for your project"
               icon="/images/4-card-feature-section/icon-team-builder.svg"
             />
             <FeatureCard
               borderColor="hsl(34, 97%, 64%)"
-              marginBottom={0}
+              marginBottom={smallDevice ? 24 : 0}
               title="Karma"
               description="Regularly evaluates our talent to ensure quality"
               icon="/images/4-card-feature-section/icon-karma.svg"
@@ -69,7 +74,7 @@ const FourCardFeature = () => {
           </Box>
           <FeatureCard
             borderColor="hsl(212, 86%, 64%)"
-            marginBottom={0}
+            marginBottom={smallDevice ? 24 : 0}
             title="Calculator"
             description="Uses data from past projects to provide better delivery estimates"
             icon="/images/4-card-feature-section/icon-calculator.svg"

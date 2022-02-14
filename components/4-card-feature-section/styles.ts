@@ -5,6 +5,10 @@ const useStyles = (theme: any) => ({
     boxShadow: "0px 10px 30px hsl(229, 6%, 66%)",
     padding: theme.spacing(3),
     width: "350px",
+    [theme.breakpoints.down("md")]: {
+      width: "100%",
+      boxShadow: "0px 8px 25px hsl(229, 6%, 66%)",
+    },
   },
   cardTitle: {
     fontSize: "20px",

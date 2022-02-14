@@ -35,15 +35,26 @@ const useStyles = (theme: any) => ({
     margin: theme.spacing(0, "auto"),
     fontWeight: 400,
     fontFamily: "Poppins, sans-serif",
+    [theme.breakpoints.down("md")]: {
+      width: "100%",
+    },
   },
   cardsWrapper: {
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
     marginTop: theme.spacing(6),
+    [theme.breakpoints.down("md")]: {
+      flexDirection: "column",
+      marginTop: theme.spacing(4),
+    },
   },
   middleCards: {
     margin: theme.spacing(0, 4),
+    [theme.breakpoints.down("md")]: {
+      margin: 0,
+      width: "100%",
+    },
   },
 });
 
