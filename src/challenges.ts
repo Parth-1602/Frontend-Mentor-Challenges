@@ -85,7 +85,7 @@ const challenges = [
     image: "/images/4-card-feature-section/desktop-preview.jpg",
     route: "/4-card-feature-section",
     github:
-      "https://github.com/Parth-1602/Frontend-Mentor-Challenges/blob/main/pages/4-card-preview-section.tsx",
+      "https://github.com/Parth-1602/Frontend-Mentor-Challenges/blob/main/pages/4-card-feature-section.tsx",
     category: "NEWBIE",
     preview: "/images/4-card-feature-section/desktop-preview.jpg",
   },
