@@ -13,7 +13,7 @@ const FourCardFeature = () => {
   const smallDevice = useMediaQuery(theme.breakpoints.down("md"));
 
   return (
-    <div className={classes.main}>
+    <div role="main" className={classes.main}>
       <Head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
