@@ -89,6 +89,15 @@ const challenges = [
     category: "NEWBIE",
     preview: "/images/4-card-feature-section/desktop-preview.jpg",
   },
+  {
+    name: "Base Apparel Coming Soon Page",
+    image: "/images/base-apparel-coming-soon-page/hero-desktop.jpg",
+    route: "/base-apparel-coming-soon-page",
+    github:
+      "https://github.com/Parth-1602/Frontend-Mentor-Challenges/blob/main/pages/base-apparel-coming-soon-page.tsx",
+    category: "NEWBIE",
+    preview: "/images/base-apparel-coming-soon-page/desktop-preview.jpg",
+  },
 ];
 
 export { challenges };
