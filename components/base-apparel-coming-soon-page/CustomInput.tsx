@@ -37,7 +37,11 @@ const CustomInput = () => {
           placeholder="Email Address"
           className={showError ? classes.errorInputBox : classes.inputBox}
         />
-        <button onClick={handleSubmit} className={classes.submitButton}>
+        <button
+          name="submit-button"
+          onClick={handleSubmit}
+          className={classes.submitButton}
+        >
           <ArrowForwardIosIcon className={classes.buttonIcon} />
         </button>
         {showError ? <ErrorIcon className={classes.errorIcon} /> : null}

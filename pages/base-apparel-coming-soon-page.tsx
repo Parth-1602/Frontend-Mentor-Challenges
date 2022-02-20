@@ -13,7 +13,7 @@ const BaseApparelComingSoon = () => {
   const smallDevice = useMediaQuery(theme.breakpoints.down("md"));
 
   return (
-    <div>
+    <div role="main">
       <Head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
