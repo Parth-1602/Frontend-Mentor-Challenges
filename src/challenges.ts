@@ -107,6 +107,15 @@ const challenges = [
     category: "NEWBIE",
     preview: "/images/intro-component-with-signup-form/desktop-preview.jpg",
   },
+  {
+    name: "Single Price Grid Component",
+    image: "/images/single-price-grid-component/desktop-preview.jpg",
+    route: "/single-price-grid-component",
+    github:
+      "https://github.com/Parth-1602/Frontend-Mentor-Challenges/blob/main/pages/single-price-grid-component.tsx",
+    category: "NEWBIE",
+    preview: "/images/single-price-grid-component/desktop-preview.jpg",
+  },
 ];
 
 export { challenges };
