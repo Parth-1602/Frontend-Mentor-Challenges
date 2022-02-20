@@ -1,0 +1,97 @@
+const useStyles = (theme: any) => ({
+  form: {
+    backgroundColor: "#FFFFFF",
+    borderRadius: theme.spacing(1),
+    marginTop: theme.spacing(2.5),
+    padding: theme.spacing(4),
+    width: "100%",
+    boxShadow: "0px 7px  hsla(249, 10%, 26%, 30%) ",
+    [theme.breakpoints.down("md")]: {
+      padding: theme.spacing(2),
+    },
+  },
+  submitButton: {
+    backgroundColor: "hsl(154, 59%, 51%)",
+    border: "none",
+    borderRadius: theme.spacing(1),
+    width: "100%",
+    padding: theme.spacing(1.5),
+    boxShadow: "0px 4px hsl(154, 59%, 35%)",
+    transition: "0.1s all ease-in-out",
+    fontFamily: "Poppins, sans-serif",
+    fontWeight: 700,
+    marginBottom: theme.spacing(2),
+    color: "#FFFFFF",
+    "&:hover": {
+      cursor: "pointer",
+      backgroundColor: "hsl(154, 59%, 70%)",
+      boxShadow: "0px 4px hsl(154, 59%, 51%)",
+    },
+  },
+  disclaimer: {
+    fontFamily: "Poppins, sans-serif",
+    textAlign: "center",
+    fontSize: "12px",
+    color: "hsl(246, 25%, 77%)",
+    fontWeight: 600,
+  },
+  disclaimerSpan: {
+    fontFamily: "Poppins, sans-serif",
+    textAlign: "center",
+    fontSize: "12px",
+    color: "hsl(0, 100%, 74%)",
+    fontWeight: 600,
+  },
+  inputWrapper: {
+    position: "relative",
+  },
+  inputOuterWrapper: {
+    marginBottom: theme.spacing(2),
+  },
+  inputField: {
+    width: "100%",
+    height: "45px",
+    color: "hsl(249, 10%, 26%)",
+    fontWeight: 600,
+    boxSizing: "border-box",
+    borderRadius: theme.spacing(1),
+    border: "1px solid hsl(246, 25%, 77%)",
+    padding: theme.spacing(1, 3),
+    "&:focus": {
+      outline: "none",
+      border: "2px solid hsl(248, 32%, 49%)",
+    },
+  },
+  errorInputField: {
+    width: "100%",
+    height: "45px",
+    color: "hsl(0, 100%, 74%) ",
+    fontWeight: 600,
+    boxSizing: "border-box",
+    borderRadius: theme.spacing(1),
+    border: "1px solid hsl(0, 100%, 74%) ",
+    padding: theme.spacing(1, 3),
+    "&:focus": {
+      outline: "none",
+      border: "2px solid hsl(0, 100%, 74%) ",
+    },
+  },
+  errorText: {
+    fontFamily: "Poppins, sans-serif",
+    textAlign: "right",
+    fontSize: "10px",
+    color: "hsl(0, 100%, 74%)",
+    fontWeight: 600,
+  },
+  errorIcon: {
+    position: "absolute",
+    color: "hsl(0, 100%, 74%)",
+    width: "22px",
+    height: "22px",
+    top: "25%",
+    right: "15px",
+    tranform: "translate(-50%, -50%)",
+  },
+});
+
+export default useStyles;

@@ -98,6 +98,15 @@ const challenges = [
     category: "NEWBIE",
     preview: "/images/base-apparel-coming-soon-page/desktop-preview.jpg",
   },
+  {
+    name: "Intro Component with Sign-up Form",
+    image: "/images/intro-component-with-signup-form/desktop-preview.jpg",
+    route: "/intro-component-with-signup-form",
+    github:
+      "https://github.com/Parth-1602/Frontend-Mentor-Challenges/blob/main/pages/intro-component-with-signup-form.tsx",
+    category: "NEWBIE",
+    preview: "/images/intro-component-with-signup-form/desktop-preview.jpg",
+  },
 ];
 
 export { challenges };
