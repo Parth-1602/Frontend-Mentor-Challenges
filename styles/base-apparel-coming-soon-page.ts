@@ -20,8 +20,10 @@ const useStyles = (theme: any) => ({
   leftCard: {
     width: "60%",
     padding: theme.spacing(6, 18),
-    backgroundImage:
-      "linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%)), linear-gradient(135deg,hsl(0, 80%, 86%), hsl(0, 74%, 74%))",
+    background:
+      "url('./images/base-apparel-coming-soon-page/bg-pattern-desktop.svg'),linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%))",
+    backgroundSize: "inherit",
+    backgroundPositionX: "100px",
     [theme.breakpoints.down("md")]: {
       width: "100%",
       textAlign: "center",
