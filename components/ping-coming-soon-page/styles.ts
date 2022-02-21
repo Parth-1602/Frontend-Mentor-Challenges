@@ -1,0 +1,102 @@
+const useStyles = (theme: any) => ({
+  inputWrapper: {
+    marginTop: theme.spacing(4),
+    display: "flex",
+    marginLeft: theme.spacing(6),
+    marginRight: theme.spacing(6),
+    [theme.breakpoints.down("md")]: {
+      flexDirection: "column",
+      marginLeft: theme.spacing(3),
+      marginRight: theme.spacing(3),
+    },
+  },
+  inputBox: {
+    border: "1px solid hsl(223, 100%, 88%) !important",
+    backgroundColor: "transparent",
+    boxSizing: "border-box",
+    padding: theme.spacing(2, 4),
+    width: "100%",
+    height: "45px",
+    color: "hsl(209, 33%, 12%)",
+    fontSize: "14px",
+    fontFamily: "Libre Franklin, sans-serif",
+    fontWeight: 300,
+    borderRadius: "25px",
+    "&::placeholder": {
+      fontSize: "14px",
+      fontFamily: "Libre Franklin, sans-serif",
+      fontWeight: 300,
+      color: "hsl(223, 100%, 88%)",
+    },
+    "&:focus": {
+      outline: "none",
+    },
+    [theme.breakpoints.down("md")]: {
+      marginBottom: theme.spacing(1.5),
+    },
+  },
+  errorInputBox: {
+    border: "1px solid hsl(354, 100%, 66%) !important",
+    backgroundColor: "transparent",
+    boxSizing: "border-box",
+    padding: theme.spacing(2, 4),
+    height: "45px",
+    width: "100%",
+    color: "hsl(209, 33%, 12%)",
+    fontSize: "14px",
+    fontFamily: "Libre Franklin, sans-serif",
+    fontWeight: 300,
+    borderRadius: "25px",
+    "&::placeholder": {
+      fontSize: "14px",
+      fontFamily: "Libre Franklin, sans-serif",
+      fontWeight: 300,
+      color: "hsl(223, 100%, 88%)",
+    },
+    "&:focus": {
+      outline: "none",
+    },
+    [theme.breakpoints.down("md")]: {
+      marginBottom: theme.spacing(0.5),
+    },
+  },
+  submitButton: {
+    boxSizing: "border-box",
+    height: "45px",
+    borderRadius: "25px",
+    marginLeft: theme.spacing(2),
+    border: "none",
+    width: "200px",
+    backgroundColor: "hsl(223, 87%, 63%)",
+    color: "#FFFFFF",
+    fontWeight: 600,
+    fontFamily: "Libre Franklin, sans-serif",
+    "&:hover": {
+      cursor: "pointer",
+      backgroundImage: "none",
+      backgroundColor: "hsl(223, 87%, 75%)",
+    },
+    [theme.breakpoints.down("md")]: {
+      width: "100%",
+      marginLeft: 0,
+    },
+  },
+  errorText: {
+    fontSize: "12px",
+    marginTop: theme.spacing(0.2),
+    textAlign: "left",
+    marginLeft: theme.spacing(8),
+    fontFamily: "Libre Franklin, sans-serif",
+    fontWeight: 300,
+    color: "hsl(354, 100%, 66%)",
+  },
+  errorMobileText: {
+    fontSize: "12px",
+    fontFamily: "Libre Franklin, sans-serif",
+    fontWeight: 300,
+    color: "hsl(354, 100%, 66%)",
+    marginBottom: theme.spacing(3),
+  },
+});
+
+export default useStyles;

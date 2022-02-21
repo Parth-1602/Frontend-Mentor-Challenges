@@ -116,6 +116,15 @@ const challenges = [
     category: "NEWBIE",
     preview: "/images/single-price-grid-component/desktop-preview.jpg",
   },
+  {
+    name: "Ping Coming Soon Page",
+    image: "/images/ping-coming-soon-page/illustration-dashboard.png",
+    route: "/ping-coming-soon-page",
+    github:
+      "https://github.com/Parth-1602/Frontend-Mentor-Challenges/blob/main/pages/ping-coming-soon-page.tsx",
+    category: "NEWBIE",
+    preview: "/images/ping-coming-soon-page/desktop-preview.jpg",
+  },
 ];
 
 export { challenges };
