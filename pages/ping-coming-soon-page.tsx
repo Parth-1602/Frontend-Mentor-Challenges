@@ -3,8 +3,8 @@ import * as React from "react";
 import useClasses from "../src/useClasses";
 import Head from "next/head";
 import CustomInput from "../components/ping-coming-soon-page/CustomInput";
+import { FaFacebookF } from "react-icons/fa";
 import useStyles from "../styles/ping-coming-soon-page";
-import FacebookOutlinedIcon from "@mui/icons-material/FacebookOutlined";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import InstagramIcon from "@mui/icons-material/Instagram";
 
@@ -61,7 +61,7 @@ const PingComingSoon = () => {
           <Box className={classes.socialIconsWrapper}>
             <a href="#">
               <Avatar className={classes.socialIconContainer}>
-                <FacebookOutlinedIcon className={classes.socialIcon} />
+                <FaFacebookF className={classes.facebookIcon} />
               </Avatar>
             </a>
             <a href="#">

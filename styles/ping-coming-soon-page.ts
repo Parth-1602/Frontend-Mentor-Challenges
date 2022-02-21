@@ -82,6 +82,14 @@ const useStyles = (theme: any) => ({
     color: "hsl(0, 0%, 59%)",
     fontWeight: 300,
   },
+  facebookIcon: {
+    color: "hsl(223, 87%, 63%)",
+    width: "15px",
+    height: "15px",
+    "&:hover": {
+      color: "#FFFFFF",
+    },
+  },
 });
 
 export default useStyles;
