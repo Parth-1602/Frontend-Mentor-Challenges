@@ -125,6 +125,15 @@ const challenges = [
     category: "NEWBIE",
     preview: "/images/ping-coming-soon-page/desktop-preview.jpg",
   },
+  {
+    name: "Huddle Landing Page",
+    image: "/images/huddle-landing-page/illustration-mockups.svg",
+    route: "/huddle-landing-page",
+    github:
+      "https://github.com/Parth-1602/Frontend-Mentor-Challenges/blob/main/pages/huddle-landing-page.tsx",
+    category: "NEWBIE",
+    preview: "/images/huddle-landing-page/desktop-preview.jpg",
+  },
 ];
 
 export { challenges };
