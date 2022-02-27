@@ -1,36 +1,61 @@
 const useStyles = (theme: any) => ({
-  tableHeader: {
-    backgroundColor: theme.palette.primary.main,
-    color: theme.palette.primary.contrastText,
+  pageWrapper: {
+    backgroundColor: "#0b0b0b",
+    minHeight: "100vh",
+    padding: theme.spacing(3, 6),
+    [theme.breakpoints.down("md")]: {
+      padding: theme.spacing(1, 3),
+    },
   },
-  thumbnail: {
-    cursor: "pointer",
-    width: "60px",
-    height: "60px",
-  },
-  categoryBox: {
-    textAlign: "center",
-    borderRadius: theme.spacing(1),
-    padding: theme.spacing(0.5),
-  },
-  newbieBox: {
-    backgroundColor: "rgb(106, 190, 205)",
-  },
-  juniorBox: {
-    backgroundColor: "rgb(170, 215, 66)",
-  },
-  intermediateBox: {
-    backgroundColor: "rgb(241, 182, 4)",
-  },
-  advancedBox: {
-    backgroundColor: "rgb(244, 137, 37)",
-  },
-  guruBox: {
-    backgroundColor: "rgb(237, 44, 73)",
-  },
-  categoryText: {
-    color: "#FFFFFF",
+  mainHeading: {
     fontWeight: 700,
+    fontFamily: "Poppins, sans-serif",
+    color: "#e50914",
+    fontSize: "45px",
+    textAlign: "center",
+  },
+  description: {
+    fontWeight: 400,
+    fontFamily: "Poppins, sans-serif",
+    color: "#FFFFFF",
+    fontSize: "20px",
+    textAlign: "center",
+  },
+  challengesWrapper: {
+    marginTop: theme.spacing(4),
+  },
+  socialIconsWrapper: {
+    display: "flex",
+    justifyContent: "center",
+    borderTop: "2px solid #FFFFFF10",
+    backgroundColor: "#0b0b0b",
+    padding: theme.spacing(2),
+  },
+  socialIconContainer: {
+    marginLeft: theme.spacing(2),
+    backgroundColor: "transparent",
+    border: "1px solid #FFF",
+    transition: "0.5s all ease",
+    "&:hover": {
+      cursor: "pointer",
+      border: "1px solid #e50914",
+    },
+    [theme.breakpoints.down("md")]: {
+      width: "25px",
+      height: "25px",
+      marginLeft: theme.spacing(1.5),
+    },
+  },
+  socialIcon: {
+    color: "#FFFFFF",
+    transition: "0.5s all ease",
+    "&:hover": {
+      color: "#e50914",
+    },
+    [theme.breakpoints.down("md")]: {
+      width: "16px",
+      height: "16px",
+    },
   },
 });
 

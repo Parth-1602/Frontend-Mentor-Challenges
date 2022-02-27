@@ -1,154 +1,77 @@
 import * as React from "react";
-import {
-  Button,
-  Box,
-  TableContainer,
-  Table,
-  TableHead,
-  TableRow,
-  TableCell,
-  TableBody,
-  Typography,
-  Modal,
-  Paper,
-} from "@mui/material";
-import { styled } from "@mui/material/styles";
-import { challenges } from "../src/challenges";
-import Router from "next/router";
-import Layout from "../components/common/Layout";
-import GitHubIcon from "@mui/icons-material/GitHub";
-import LanguageIcon from "@mui/icons-material/Language";
+import { Box, Typography, Grid, Avatar } from "@mui/material";
 import useClasses from "../src/useClasses";
+import { challenges } from "../src/challenges";
+import { FaFacebookF } from "react-icons/fa";
+import { FiGithub } from "react-icons/fi";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import Head from "next/head";
 import useStyles from "../styles/style";
-
-const DemoButton = styled(Button)(({ theme }) => ({
-  color: "#FFFFFF",
-  backgroundColor: "#00AD7C",
-  "&:hover": {
-    backgroundColor: "#00AD7C",
-  },
-}));
+import ChallengeBox from "../components/landing-page/ChallengeBox";
 
 const LandingPage = () => {
   const classes = useClasses(useStyles);
-  const [openModal, setOpenModal] = React.useState(false);
-  const [previewImage, setPreviewImage] = React.useState(null);
-
-  const handleClose = () => {
-    setOpenModal(false);
-  };
 
   return (
-    <div>
-      <Layout>
-        <Modal open={openModal} onClose={handleClose}>
-          <Box
-            sx={{
-              position: "absolute",
-              top: "50%",
-              left: "50%",
-              transform: "translate(-50%, -50%)",
-            }}
-          >
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src={previewImage}
-              alt="Main Image"
-              width="100%"
-              height="100%"
-            />
-          </Box>
-        </Modal>
-        <TableContainer component={Paper}>
-          <Table sx={{ minWidth: 650 }} aria-label="simple table">
-            <TableHead className={classes.tableHeader}>
-              <TableRow>
-                <TableCell align="center">Preview</TableCell>
-                <TableCell align="center">Name</TableCell>
-                <TableCell align="center">Category</TableCell>
-                <TableCell align="center">Source Code</TableCell>
-                <TableCell align="center">Live Site</TableCell>
-              </TableRow>
-            </TableHead>
-            <TableBody>
-              {challenges.map((challenge_detail) => {
-                return (
-                  <TableRow
-                    key={challenge_detail.name}
-                    sx={{
-                      "&:last-child td, &:last-child th": { border: 0 },
-                    }}
-                  >
-                    <TableCell align="center">
-                      {/* eslint-disable-next-line @next/next/no-img-element */}
-                      <img
-                        src={challenge_detail.image}
-                        alt="Main Image"
-                        onClick={() => {
-                          setPreviewImage(challenge_detail.preview);
-                          setOpenModal(true);
-                        }}
-                        className={classes.thumbnail}
-                      />
-                    </TableCell>
-                    <TableCell align="center">
-                      {challenge_detail.name}
-                    </TableCell>
-                    <TableCell align="center">
-                      <Box
-                        className={`${classes.categoryBox} ${
-                          challenge_detail.category === "NEWBIE"
-                            ? classes.newbieBox
-                            : challenge_detail.category === "JUNIOR"
-                            ? classes.juniorBox
-                            : challenge_detail.category === "INTERMEDIATE"
-                            ? classes.intermediateBox
-                            : challenge_detail.category === "ADVANCED"
-                            ? classes.advancedBox
-                            : classes.guruBox
-                        }`}
-                      >
-                        <Typography
-                          className={classes.categoryText}
-                          variant="subtitle2"
-                          component="p"
-                        >
-                          {challenge_detail.category}
-                        </Typography>
-                      </Box>
-                    </TableCell>
-                    <TableCell align="center">
-                      <Button
-                        variant="contained"
-                        startIcon={<GitHubIcon />}
-                        size="small"
-                      >
-                        <a
-                          href={challenge_detail.github}
-                          target="_blank"
-                          rel="noreferrer"
-                        >
-                          VISIT GITHUB
-                        </a>
-                      </Button>
-                    </TableCell>
-                    <TableCell align="center">
-                      <DemoButton
-                        variant="contained"
-                        startIcon={<LanguageIcon />}
-                        size="small"
-                        onClick={() => Router.push(challenge_detail.route)}
-                      >
-                        LIVE SITE
-                      </DemoButton>
-                    </TableCell>
-                  </TableRow>
-                );
-              })}
-            </TableBody>
-          </Table>
-        </TableContainer>
-      </Layout>
+    <div role="main">
+      <Head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        {/* eslint-disable-next-line @next/next/no-page-custom-font */}
+        <link
+          href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+          rel="stylesheet"
+        />
+      </Head>
+      <Box className={classes.pageWrapper}>
+        <Typography variant="h1" component="h1" className={classes.mainHeading}>
+          Frontend Mentor Challenges
+        </Typography>
+        <Typography
+          variant="subtitle1"
+          component="p"
+          className={classes.description}
+        >
+          These are my solutions to Frontend Mentor Challenges using Next.JS,
+          React and Material UI.
+        </Typography>
+
+        <Grid container className={classes.challengesWrapper} spacing={3}>
+          {challenges.map((challenge_detail, i) => {
+            return <ChallengeBox details={challenge_detail} key={i} />;
+          })}
+        </Grid>
+      </Box>
+      <Box className={classes.socialIconsWrapper}>
+        <a
+          href="https://www.facebook.com/parth.sharma.16021998/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <Avatar className={classes.socialIconContainer}>
+            <FaFacebookF className={classes.socialIcon} />
+          </Avatar>
+        </a>
+        <a
+          href="https://github.com/Parth-1602/Frontend-Mentor-Challenges"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <Avatar className={classes.socialIconContainer}>
+            <FiGithub className={classes.socialIcon} />
+          </Avatar>
+        </a>
+        <a
+          href="https://instagram.com/parth_160298/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <Avatar className={classes.socialIconContainer}>
+            <InstagramIcon className={classes.socialIcon} />
+          </Avatar>
+        </a>
+      </Box>
     </div>
   );
 };
