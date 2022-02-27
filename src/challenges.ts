@@ -1,5 +1,11 @@
 const challenges = [
   {
+    name: "Advice Generator App",
+    route: "/advice-generator-app",
+    category: 2,
+    preview: "/images/advice-generator-app/desktop-preview.jpg",
+  },
+  {
     name: "Huddle Landing Page",
     route: "/huddle-landing-page",
     category: 1,
