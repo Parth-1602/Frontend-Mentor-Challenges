@@ -90,6 +90,13 @@ const useStyles = (theme: any) => ({
       marginBottom: 0,
     },
   },
+  listButtonActive: {
+    color: "#FFFFFF",
+    marginBottom: theme.spacing(2),
+    [theme.breakpoints.down("md")]: {
+      marginBottom: 0,
+    },
+  },
   gridContainer: {
     width: "80%",
     paddingLeft: theme.spacing(3),

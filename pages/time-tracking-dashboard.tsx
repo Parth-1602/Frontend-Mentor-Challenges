@@ -54,19 +54,31 @@ const TimeTrackingDashboard = () => {
             </Box>
             <ul className={classes.actionButtonsList}>
               <li
-                className={classes.listButton}
+                className={
+                  periodType === periodEnum[1]
+                    ? `${classes.listButtonActive} ${classes.listButtonActive}`
+                    : classes.listButton
+                }
                 onClick={() => setPeriodType(periodEnum[1])}
               >
                 Daily
               </li>
               <li
-                className={classes.listButton}
+                className={
+                  periodType === periodEnum[2]
+                    ? `${classes.listButtonActive} ${classes.listButtonActive}`
+                    : classes.listButton
+                }
                 onClick={() => setPeriodType(periodEnum[2])}
               >
                 Weekly
               </li>
               <li
-                className={classes.listButton}
+                className={
+                  periodType === periodEnum[3]
+                    ? `${classes.listButtonActive} ${classes.listButtonActive}`
+                    : classes.listButton
+                }
                 onClick={() => setPeriodType(periodEnum[3])}
               >
                 Monthly
