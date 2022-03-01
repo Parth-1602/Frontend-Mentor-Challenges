@@ -1,10 +1,9 @@
 import * as React from "react";
 import { Box, Typography, Grid, Avatar } from "@mui/material";
 import useClasses from "../src/useClasses";
-import { challenges } from "../src/challenges";
+import data from "../src/landing-page/challenges.json";
 import { FaFacebookF } from "react-icons/fa";
 import { FiGithub } from "react-icons/fi";
-import GitHubIcon from "@mui/icons-material/GitHub";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import Head from "next/head";
 import useStyles from "../styles/style";
@@ -38,7 +37,7 @@ const LandingPage = () => {
         </Typography>
 
         <Grid container className={classes.challengesWrapper} spacing={3}>
-          {challenges.map((challenge_detail, i) => {
+          {data.map((challenge_detail, i) => {
             return <ChallengeBox details={challenge_detail} key={i} />;
           })}
         </Grid>
