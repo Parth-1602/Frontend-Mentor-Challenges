@@ -32,6 +32,7 @@ const TimeTrackingDashboard = () => {
           <Box className={classes.leftCardWrapper}>
             <Box className={classes.profileCard}>
               <Avatar
+                alt="profile-image"
                 src="/images/time-tracking-dashboard/image-jeremy.png"
                 className={classes.profileIcon}
               />
