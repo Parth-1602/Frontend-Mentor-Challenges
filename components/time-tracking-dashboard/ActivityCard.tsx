@@ -4,6 +4,12 @@ import * as React from "react";
 import useClasses from "../../src/useClasses";
 import useStyles from "./styles";
 
+const periodTextEnum = Object.freeze({
+  daily: "Yesterday",
+  weekly: "Last Week",
+  monthly: "Last Month",
+});
+
 const ActivityCard = ({
   timeframes,
   title,
@@ -14,18 +20,25 @@ const ActivityCard = ({
   const classes = useClasses(useStyles);
   const [currentTime, setCurrentTime] = React.useState(null);
   const [previousTime, setPreviousTime] = React.useState(null);
+  const [lastText, setLastText] = React.useState(null);
 
   React.useEffect(() => {
     let requiredTimeFrames = timeframes[periodType];
+    let requiredLastText = periodTextEnum[periodType];
 
-    if (
-      requiredTimeFrames &&
-      requiredTimeFrames.current &&
-      requiredTimeFrames.previous
-    ) {
-      setCurrentTime(requiredTimeFrames.current);
-      setPreviousTime(requiredTimeFrames.previous);
+    if (requiredLastText) {
+      setLastText(requiredLastText);
     }
+
+    if (periodType)
+      if (
+        requiredTimeFrames &&
+        requiredTimeFrames.current &&
+        requiredTimeFrames.previous
+      ) {
+        setCurrentTime(requiredTimeFrames.current);
+        setPreviousTime(requiredTimeFrames.previous);
+      }
   }, [periodType, timeframes]);
 
   return (
@@ -62,7 +75,7 @@ const ActivityCard = ({
               component="p"
               className={classes.lastActivityStat}
             >
-              Last Week -
+              {lastText} -
               {`${previousTime ? previousTime : "0"}${
                 previousTime > 1 ? "hrs" : "hr"
               }`}
