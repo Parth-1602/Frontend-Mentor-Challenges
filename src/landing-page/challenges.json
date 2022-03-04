@@ -1,5 +1,11 @@
 [
   {
+    "name": "Tip Calculator App",
+    "route": "/tip-calculator-app",
+    "category": 2,
+    "preview": "/images/tip-calculator-app/desktop-preview.jpg"
+  },
+  {
     "name": "Time Tracking Dashboard",
     "route": "/time-tracking-dashboard",
     "category": 2,
