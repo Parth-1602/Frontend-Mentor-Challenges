@@ -8,7 +8,11 @@ const TestimonialCard = ({ imageSrc, comment, author, post }) => {
 
   return (
     <Box className={classes.card}>
-      <Avatar src={imageSrc} className={classes.avatarIcon} />
+      <Avatar
+        src={imageSrc}
+        className={classes.avatarIcon}
+        alt="profile-image"
+      />
       <Typography variant="subtitle1" component="p" className={classes.comment}>
         {comment}
       </Typography>

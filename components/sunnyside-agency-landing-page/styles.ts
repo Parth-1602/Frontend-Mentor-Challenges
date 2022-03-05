@@ -129,7 +129,6 @@ export const section1Styles = (theme: any) => ({
     },
   },
   leftCard: {
-    backgroundColor: " hsla(7, 99%, 70%, 0.1)",
     width: "50%",
     display: "flex",
     alignItems: "center",
@@ -221,7 +220,6 @@ export const section2Styles = (theme: any) => ({
     display: "flex",
   },
   rightCard: {
-    backgroundColor: " hsla(7, 99%, 70%, 0.1)",
     width: "50%",
     display: "flex",
     alignItems: "center",
@@ -346,6 +344,7 @@ export const section3Styles = (theme: any) => ({
 export const testimonialStyles = (theme: any) => ({
   sectionWrapper: {
     padding: theme.spacing(16),
+    backgroundColor: " hsla(7, 99%, 70%, 0.1)",
     [theme.breakpoints.down("md")]: {
       padding: theme.spacing(6, 4),
     },
@@ -395,7 +394,7 @@ export const testimonialStyles = (theme: any) => ({
   comment: {
     fontFamily: "Barlow, sans-serif",
     fontSize: "18px",
-    color: "hsl(212, 27%, 19%)",
+    color: "hsl(232, 10%, 55%)",
     fontWeight: 600,
     lineHeight: "24px",
     marginBottom: theme.spacing(6),
