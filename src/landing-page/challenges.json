@@ -1,5 +1,11 @@
 [
   {
+    "name": "Sunnyside Agency Landing Page",
+    "route": "/sunnyside-agency-landing-page",
+    "category": 2,
+    "preview": "/images/sunnyside-agency-landing-page/desktop-preview.jpg"
+  },
+  {
     "name": "Tip Calculator App",
     "route": "/tip-calculator-app",
     "category": 2,

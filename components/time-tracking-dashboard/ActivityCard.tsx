@@ -30,15 +30,10 @@ const ActivityCard = ({
       setLastText(requiredLastText);
     }
 
-    if (periodType)
-      if (
-        requiredTimeFrames &&
-        requiredTimeFrames.current &&
-        requiredTimeFrames.previous
-      ) {
-        setCurrentTime(requiredTimeFrames.current);
-        setPreviousTime(requiredTimeFrames.previous);
-      }
+    if (requiredTimeFrames) {
+      setCurrentTime(requiredTimeFrames.current);
+      setPreviousTime(requiredTimeFrames.previous);
+    }
   }, [periodType, timeframes]);
 
   return (
