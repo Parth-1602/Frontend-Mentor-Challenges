@@ -34,6 +34,7 @@ const AdviceGenerator = () => {
   return (
     <div role="main">
       <Head>
+        <title>Advice Generator App</title>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         {/* eslint-disable-next-line @next/next/no-page-custom-font */}

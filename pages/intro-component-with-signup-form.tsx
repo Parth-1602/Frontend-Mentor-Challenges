@@ -15,6 +15,7 @@ const IntroSignUp = () => {
   return (
     <div role="main">
       <Head>
+        <title>Intro Component Sign Up</title>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         {/* eslint-disable-next-line @next/next/no-page-custom-font */}

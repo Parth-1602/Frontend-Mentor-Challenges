@@ -9,6 +9,7 @@ const ThreeColumnPreviewCard = () => {
   return (
     <div>
       <Head>
+        <title>3 Column Preview Card</title>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         {/* eslint-disable-next-line @next/next/no-page-custom-font */}

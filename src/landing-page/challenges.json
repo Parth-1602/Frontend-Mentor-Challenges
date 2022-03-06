@@ -1,5 +1,11 @@
 [
   {
+    "name": "Blogr Landing Page",
+    "route": "/blogr-landing-page",
+    "category": 2,
+    "preview": "/images/blogr-landing-page/desktop-preview.jpg"
+  },
+  {
     "name": "Sunnyside Agency Landing Page",
     "route": "/sunnyside-agency-landing-page",
     "category": 2,

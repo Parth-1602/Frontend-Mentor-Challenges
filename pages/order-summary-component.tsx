@@ -46,6 +46,7 @@ const CancelButton = styled(Button)({
 });
 
 const OrderSummary = () => {
+  <title>Order Summary</title>;
   const classes = useClasses(useStyles);
   return (
     <div>
