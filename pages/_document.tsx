@@ -21,6 +21,8 @@ export default class MyDocument extends Document {
         <body style={{ margin: 0 }}>
           <Main />
           <NextScript />
+          <div id="modal" />
+          <div id="dropdown" />
         </body>
         <style global jsx>{`
           .grecaptcha-badge {

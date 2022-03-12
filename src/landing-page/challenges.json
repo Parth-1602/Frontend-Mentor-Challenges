@@ -1,4 +1,10 @@
-[
+[ 
+  {
+  "name": "Crowdfunding Product Page",
+  "route": "/crowdfunding-product-page",
+  "category": 2,
+  "preview": "/images/crowdfunding-product-page/desktop-preview.jpg"
+  },
   {
     "name": "Blogr Landing Page",
     "route": "/blogr-landing-page",
