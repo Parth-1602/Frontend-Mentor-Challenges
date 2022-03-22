@@ -1,5 +1,11 @@
 [ 
   {
+    "name": "Interactive Pricing Component",
+    "route": "/interactive-pricing-component",
+    "category": 2,
+    "preview": "/images/interactive-pricing-component/desktop-preview.jpg"
+  },
+  {
   "name": "Crowdfunding Product Page",
   "route": "/crowdfunding-product-page",
   "category": 2,
@@ -124,5 +130,11 @@
     "route": "/qr-code-component",
     "category": 1,
     "preview": "/images/qr-code-component/desktop-preview.jpg"
+  },
+  {
+    "name": "Interactive Rating Component",
+    "route": "/interactive-rating-component",
+    "category": 2,
+    "preview": "/images/interactive-rating-component/desktop-preview.jpg"
   }
 ]

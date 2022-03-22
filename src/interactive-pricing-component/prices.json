@@ -1,0 +1,7 @@
+[
+  { "price": "8.00", "pageviews": "10K", "yearly":"6.00" },
+  { "price": "12.00", "pageviews": "50K", "yearly":"9.00" },
+  { "price": "16.00", "pageviews": "100K", "yearly":"12.00"},
+  { "price": "24.00", "pageviews": "500K", "yearly":"18.00" },
+  { "price": "36.00", "pageviews": "1M", "yearly":"27.00" }
+]
