@@ -1,5 +1,11 @@
 [ 
   {
+    "name": "Loopstudios Landing Page",
+    "route": "/loopstudios-landing-page",
+    "category": 2,
+    "preview": "/images/loopstudios-landing-page/desktop-preview.jpg"
+  },
+  {
     "name": "Interactive Pricing Component",
     "route": "/interactive-pricing-component",
     "category": 2,
@@ -134,7 +140,7 @@
   {
     "name": "Interactive Rating Component",
     "route": "/interactive-rating-component",
-    "category": 2,
+    "category": 1,
     "preview": "/images/interactive-rating-component/desktop-preview.jpg"
   }
 ]

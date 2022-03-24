@@ -1,0 +1,50 @@
+[    
+    {
+        "imageSrc":"/images/loopstudios-landing-page/desktop/image-deep-earth.jpg",
+        "mobileImageSrc":"/images/loopstudios-landing-page/mobile/image-deep-earth.jpg",
+        "titleTop": "DEEP",
+        "titleBottom": "EARTH"
+    },
+    {
+        "imageSrc":"/images/loopstudios-landing-page/desktop/image-night-arcade.jpg",
+        "mobileImageSrc":"/images/loopstudios-landing-page/mobile/image-night-arcade.jpg",
+        "titleTop": "NIGHT",
+        "titleBottom": "ARCADE"
+    },
+    {
+        "imageSrc":"/images/loopstudios-landing-page/desktop/image-soccer-team.jpg",
+        "mobileImageSrc":"/images/loopstudios-landing-page/mobile/image-soccer-team.jpg",
+        "titleTop": "SOCCERR",
+        "titleBottom": "TEAM VR"
+    },
+    {
+        "imageSrc":"/images/loopstudios-landing-page/desktop/image-grid.jpg",
+        "mobileImageSrc":"/images/loopstudios-landing-page/mobile/image-grid.jpg",
+        "titleTop": "THE",
+        "titleBottom": "GRID"
+    },
+    {
+        "imageSrc":"/images/loopstudios-landing-page/desktop/image-from-above.jpg",
+        "mobileImageSrc":"/images/loopstudios-landing-page/mobile/image-from-above.jpg",
+        "titleTop": "FROM UP",
+        "titleBottom": "ABOVE VR"
+    },
+    {
+        "imageSrc":"/images/loopstudios-landing-page/desktop/image-pocket-borealis.jpg",
+        "mobileImageSrc":"/images/loopstudios-landing-page/mobile/image-pocket-borealis.jpg",
+        "titleTop": "POCKET",
+        "titleBottom": "BOREALIS"
+    },
+    {
+        "imageSrc":"/images/loopstudios-landing-page/desktop/image-curiosity.jpg",
+        "mobileImageSrc":"/images/loopstudios-landing-page/mobile/image-curiosity.jpg",
+        "titleTop": "THE",
+        "titleBottom": "CURIOSITY"
+    },
+    {
+        "imageSrc":"/images/loopstudios-landing-page/desktop/image-fisheye.jpg",
+        "mobileImageSrc":"/images/loopstudios-landing-page/mobile/image-fisheye.jpg",
+        "titleTop": "MAKE IT",
+        "titleBottom": "FISHEYE"
+    }
+]
