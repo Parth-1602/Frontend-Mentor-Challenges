@@ -48,6 +48,12 @@
     "preview": "/images/advice-generator-app/desktop-preview.jpg"
   },
   {
+    "name": "Snap Landing Page",
+    "route": "/snap-landing-page",
+    "category": 2,
+    "preview": "/images/snap-landing-page/desktop-preview.jpg"
+  },
+  {
     "name": "Huddle Landing Page",
     "route": "/huddle-landing-page",
     "category": 1,
