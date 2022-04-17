@@ -164,6 +164,3 @@ const useStyles = (theme: any) => ({
 });
 
 export default useStyles;
-
-// font-family: 'Open Sans', sans-serif;
-// font-family: 'Poppins', sans-serif;
