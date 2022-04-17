@@ -30,7 +30,11 @@ const TestimonialCard = (props) => {
       }}
     >
       <Box className={classes.authorWrapper}>
-        <Avatar src={avatarSrc} className={classes.authorProfileImage} />
+        <Avatar
+          src={avatarSrc}
+          className={classes.authorProfileImage}
+          alt="profile-icon"
+        />
         <Box className={classes.authorDetailsWrapper}>
           <Typography
             variant="subtitle1"
