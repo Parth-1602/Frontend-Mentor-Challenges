@@ -1,5 +1,11 @@
 [ 
   {
+    "name": "Testimonials Grid Section",
+    "route": "/testimonials-grid-section",
+    "category": 2,
+    "preview": "/images/testimonials-grid-section/desktop-preview.jpg"
+  },
+  {
     "name": "Loopstudios Landing Page",
     "route": "/loopstudios-landing-page",
     "category": 2,
