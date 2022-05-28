@@ -66,6 +66,12 @@
     "preview": "/images/snap-landing-page/desktop-preview.jpg"
   },
   {
+    "name": "Expenses Chart Component",
+    "route": "/expenses-chart-component",
+    "category": 2,
+    "preview": "/images/expenses-chart-component/desktop-preview.jpg"
+  },
+  {
     "name": "Huddle Landing Page",
     "route": "/huddle-landing-page",
     "category": 1,
