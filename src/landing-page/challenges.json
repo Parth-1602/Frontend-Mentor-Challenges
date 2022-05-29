@@ -1,5 +1,11 @@
 [
   {
+    "name": "Coding Bootcamp Testimonials",
+    "route": "/coding-bootcamp-testimonials-slider",
+    "category": 2,
+    "preview": "/images/coding-bootcamp-testimonials-slider/desktop-preview.jpg"
+  },
+  {
     "name": "Flyo Data Storage Component",
     "route": "/flyo-data-storage-component",
     "category": 2,
