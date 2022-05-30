@@ -1,5 +1,11 @@
 [
   {
+    "name": "Social Media Dashboard",
+    "route": "/social-media-dashboard",
+    "category": 2,
+    "preview": "/images/social-media-dashboard/desktop-preview.jpg"
+  },
+  {
     "name": "Coding Bootcamp Testimonials",
     "route": "/coding-bootcamp-testimonials-slider",
     "category": 2,

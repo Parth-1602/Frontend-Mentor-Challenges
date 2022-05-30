@@ -1,0 +1,58 @@
+[
+  {
+    "overviewHeading": "Page Views",
+    "socialIcon": "/images/social-media-dashboard/icon-facebook.svg",
+    "stat": 87,
+    "isIncreased": true,
+    "changedAmount": "3%"
+  },
+  {
+    "overviewHeading": "Likes",
+    "socialIcon": "/images/social-media-dashboard/icon-facebook.svg",
+    "stat": 52,
+    "isIncreased": false,
+    "changedAmount": "2%"
+  },
+  {
+    "overviewHeading": "Likes",
+    "socialIcon": "/images/social-media-dashboard/icon-instagram.svg",
+    "stat": 5462,
+    "isIncreased": true,
+    "changedAmount": "2257%"
+  },
+  {
+    "overviewHeading": "Profile Views",
+    "socialIcon": "/images/social-media-dashboard/icon-instagram.svg",
+    "stat": 52000,
+    "isIncreased": true,
+    "changedAmount": "1375%"
+  },
+  {
+    "overviewHeading": "Retweets",
+    "socialIcon": "/images/social-media-dashboard/icon-twitter.svg",
+    "stat": 117,
+    "isIncreased": true,
+    "changedAmount": "303%"
+  },
+  {
+    "overviewHeading": "Likes",
+    "socialIcon": "/images/social-media-dashboard/icon-twitter.svg",
+    "stat": 507,
+    "isIncreased": true,
+    "changedAmount": "553%"
+  },
+  {
+    "overviewHeading": "Likes",
+    "socialIcon": "/images/social-media-dashboard/icon-youtube.svg",
+    "stat": 107,
+    "isIncreased": false,
+    "changedAmount": "19%"
+  },
+  {
+    "overviewHeading": "Total Views",
+    "socialIcon": "/images/social-media-dashboard/icon-youtube.svg",
+    "stat": 1407,
+    "isIncreased": false,
+    "changedAmount": "12%"
+  }
+]

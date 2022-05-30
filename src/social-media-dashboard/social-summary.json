@@ -1,0 +1,38 @@
+[
+  {
+    "indicatorColor": "hsl(208, 92%, 53%)",
+    "socialIcon": "/images/social-media-dashboard/icon-facebook.svg",
+    "socialName": "@nathanf",
+    "stat": 1987,
+    "statText": "FOLLOWERS",
+    "isIncreased": true,
+    "changedAmount": 12
+  },
+  {
+    "indicatorColor": "hsl(203, 89%, 53%)",
+    "socialIcon": "/images/social-media-dashboard/icon-twitter.svg",
+    "socialName": "@nathanf",
+    "stat": 1044,
+    "statText": "FOLLOWERS",
+    "isIncreased": true,
+    "changedAmount": 99
+  },
+  {
+    "indicatorColor": "linear-gradient(to right,hsl(37, 97%, 70%), hsl(329, 70%, 58%))",
+    "socialIcon": "/images/social-media-dashboard/icon-instagram.svg",
+    "socialName": "@realnathanf",
+    "stat": 11000,
+    "statText": "FOLLOWERS",
+    "isIncreased": true,
+    "changedAmount": 1099
+  },
+  {
+    "indicatorColor": "hsl(348, 97%, 39%)",
+    "socialIcon": "/images/social-media-dashboard/icon-youtube.svg",
+    "socialName": "Nathan F.",
+    "stat": 8239,
+    "statText": "SUBSCRIBERS",
+    "isIncreased": false,
+    "changedAmount": 144
+  }
+]
