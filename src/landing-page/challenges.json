@@ -1,5 +1,11 @@
 [
   {
+    "name": "Insure Landing Page",
+    "route": "/insure-landing-page",
+    "category": 2,
+    "preview": "/images/insure-landing-page/desktop-preview.jpg"
+  },
+  {
     "name": "Social Media Dashboard",
     "route": "/social-media-dashboard",
     "category": 2,
