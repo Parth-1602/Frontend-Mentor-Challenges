@@ -37,12 +37,14 @@ const Header = () => {
           <button className={classes.headerButton}>VIEW PLANS</button>
         </Box>
       </Hidden>
-      {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img
-        src="/images/insure-landing-page/icon-hamburger.svg"
-        alt="menu-icon"
-        onClick={() => setIsNavMenu(true)}
-      />
+      <Hidden mdUp>
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src="/images/insure-landing-page/icon-hamburger.svg"
+          alt="menu-icon"
+          onClick={() => setIsNavMenu(true)}
+        />
+      </Hidden>
       {isNavMenu && (
         <Box className={classes.navMenuWrapper}>
           <Box className={classes.headerWrapper}>
