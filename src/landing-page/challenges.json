@@ -184,5 +184,11 @@
     "route": "/interactive-rating-component",
     "category": 1,
     "preview": "/images/interactive-rating-component/desktop-preview.jpg"
+  },
+  {
+    "name": "Product Preview Card Component",
+    "route": "/product-preview-card-component",
+    "category": 1,
+    "preview": "/images/product-preview-card-component/desktop-preview.jpg"
   }
 ]
